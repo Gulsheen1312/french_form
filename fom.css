@@ -1,0 +1,23 @@
+body{
+  font-size: 30px;
+}
+img{
+  margin-left: 500px;
+    width: 400px;
+    height: 200px;
+}
+hr{
+  border-style: none;
+border-top: dotted;
+border-color: grey;
+border-width: 5px;
+width: 5%;
+}
+p{
+  font-size: 20px;
+  margin-left: 30%;
+}
+.bottom{
+  font-size: 30px;
+  margin-left:46%;
+}
