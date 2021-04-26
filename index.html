@@ -1,69 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-
-  <title>GFC</title>
-  <link rel="stylesheet" href="fom.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="master.css">
+  <title>GFC Form</title>
 </head>
-<link rel="icon" href="favicon.ico">
 <body>
-  <img src="logo.jpg" alt="logo">
+  <div class="center">
+    <img class="logo" src="logo.jpg" alt="GFC-Logo">
+  </div>
+
+<div class="body">
   <form action="mailto:gulsheenkaur123@gmail.com" method="post" enctype="text/plain">
-    <label class="top">date:-</label>
-    <input type="date" name="date" value=""><br>
-    <em> <u>
-        <h2>Student Profile</h2>
-      </u></em>
-    <label>Name:-</label>
-    <input type="text" name="Name" value=""><br><br>
-    <label>Grade:-</label>
-    <input type="text" name="Grade" value=""><br><br>
-    <label>School:-</label>
-    <input type="text" name="School" value=""><br><br>
-    <label>Date of Birth:-</label>
-    <input type="date" name="Date of Birth" value=""><br><br>
-    <label>Address:-</label>
-    <input type="text" name="address" value="">
-    <hr>
-    <em><u>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <em><u>
+              <h2>Student Profile</h2>
+            </u></em>
+          <label>Name:-</label><br>
+          <input type="text" name="Name" value="" autocomplete="off"><br><br>
+          <label>Grade:-</label><br>
+          <input type="text" name="Grade" value="" autocomplete="off"><br><br>
+          <label>School:-</label><br>
+          <input type="text" name="School" value="" autocomplete="off"><br><br>
+          <label>Date of Birth:-</label><br>
+          <input type="date" name="Date of Birth" value="" autocomplete="off"><br><br>
+          <label>Address:-</label><br>
+          <input type="text" name="address" value="" autocomplete="off" >
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <em><u>
         <h2>Parent's Profile</h2>
       </u></em>
     <label>Father's Name:-</label>
-    <input type="text" name="father's name " value=""><br><br>
+    <input type="text" name="father's name " value="" autocomplete="off"><br><br>
     <label>Father's Phone No.</label>
-    <input type="number" name="father's mobile no." value=""><br><br>
+    <input type="number" name="father's mobile no." value="" autocomplete="off"><br><br>
     <label>Father's Occupation:-</label>
-    <input type="text" name="father's occupation" value=""><br><br>
+    <input type="text" name="father's occupation" value="" autocomplete="off"><br><br>
     <label>Mother's Name:-</label>
-    <input type="text" name="Mother's name " value=""><br><br>
+    <input type="text" name="Mother's name " value="" autocomplete="off"><br><br>
     <label>Mother's Phone No.</label>
-    <input type="number" name="mother's Phone no." value=""><br><br>
+    <input type="number" name="mother's Phone no." value="" autocomplete="off"><br><br>
     <label>Mother's Occupation:-</label>
-    <input type="text" name="Mother's occupation" value=""><br><br>
-    <hr>
-    <em><u>
+    <input type="text" name="Mother's occupation" value="" autocomplete="off">
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <em><u>
         <h2>Tick any one option:-</h2>
       </u></em>
     <label>Q1. Mode of classes:-</label><br>
-    <input type="checkbox" value=" Offline" name="Mode of classes"> 1. Offline <br>
-    <input type="checkbox" value="Online:-Zoom or Whatapp video" name="Mode of classes"> 2.Online:-Zoom or Whatapp video <br><br>
+    <input type="radio" value=" Offline" name="Mode of classes"><span>1. Offline</span>  <br>
+    <input type="radio" value="Online:-Zoom or Whatapp video" name="Mode of classes"><span>2. Online :- Zoom </span>  <br><br>
     <label>Q2. Course Details:- </label><br>
-    <input type="checkbox" value=" Junior " name="Course Details"> 1. Junior <br>
-    <input type="checkbox" value="Extensive" name="Course Details"> 2. Extensive <br>
-    <input type="checkbox" value="Intensive" name="Course Details"> 3. Intensive <br>
-    <input type="checkbox" value="DELF" name="Course Details"> 4. DELF <br>
-    <input type="checkbox" name="Course Details" value="Grade:-5th to 10th"> 5. Grade:-5<sup>th</sup> to 10<sup>th</sup><br><br>
+    <input type="radio" value=" Junior " name="Course Details"><span>1. Junior</span>  <br>
+    <input type="radio" value="Extensive" name="Course Details"><span>2. Extensive</span>  <br>
+    <input type="radio" value="Intensive" name="Course Details"><span>3. Intensive</span>  <br>
+    <input type="radio" value="DELF" name="Course Details"><span>4. DELF</span>  <br>
+    <input type="radio" name="Course Details" value="Grade:-5th to 10th"><span>5. Grade:-5<sup>th</sup> to 10<sup>th</sup></span> <br><br>
     <label>Q3. Mode of payment:- </label><br>
-      <input type="checkbox" value="PAYTM" name="Mode of payment"> 1. PAYTM <br>
-        <input type="checkbox" value="Google pay " name="Mode of payment"> 2. Google pay <br>
-          <input type="checkbox" value="NEFT/Bank transfer" name="Mode of payment"> 3.NEFT/Bank transfer <br>
-            <input type="checkbox" value="Cash" name="Mode of payment"> 4. Cash <br><br><br>
-              <input class="bottom" type="Submit" name="" value="Submit" >
-              <p>This form will be send to my mail : gulsheenkaur123@gmail.com</p>
-            <hr>
+      <input type="radio" value="PAYTM" name="Mode of payment"><span>1. PAYTM</span>  <br>
+        <input type="radio" value="Google pay " name="Mode of payment"><span>2. Google pay</span>  <br>
+          <input type="radio" value="NEFT/Bank transfer" name="Mode of payment"><span>3. NEFT/Bank transfer</span>  <br>
+            <input type="radio" value="Cash" name="Mode of payment"><span>4. Cash</span>
+        </div>
+      </div>
+    </div>
+    <div class="end">
+      <button class="submit" type="submit">Submit</button>
+    </div>
+
   </form>
+
 
 </body>
 
 </html>
+
